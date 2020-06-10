@@ -683,3 +683,17 @@ ul,ol {
 		color: #00bba7;
 	}
 }
+
+.spacer {
+    height: 3rem;
+}
+
+.bibbase_amazon {
+    display: none;
+}
+
+.bibbase_paper_title a{ pointer-events: none; }
+
+.groupby_dropdown {
+  display: none;
+}
