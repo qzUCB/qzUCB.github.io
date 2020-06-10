@@ -704,3 +704,4 @@ body {
 
 #bibbase_header a[onclick="groupby('downloads')"] { display: none; }
 
+.bibbase_header a[onclick="groupby('downloads')"] { display: none; }
