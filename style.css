@@ -10,8 +10,8 @@ body {
     display: none;
 }
 
-.bibbase_paper_title a{ 
-	pointer-events: none;
-}
+.bibbase_paper_title a{ pointer-events: none; }
 
-.bibbase_header a[href*="javascript:groupby('downloads')"] { display: none; }
+.groupby_dropdown {
+  display: none;
+}
