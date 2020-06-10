@@ -14,4 +14,4 @@ body {
 	pointer-events: none;
 }
 
-#bibbase_header a[href*="javascript:groupby('downloads')"] { display: none; }
+.bibbase_header a[href*="javascript:groupby('downloads')"] { display: none; }
