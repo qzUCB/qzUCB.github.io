@@ -684,6 +684,10 @@ ul,ol {
 	}
 }
 
+body {
+    padding: 1rem;
+}
+
 .spacer {
     height: 3rem;
 }
@@ -697,3 +701,6 @@ ul,ol {
 .groupby_dropdown {
   display: none;
 }
+
+#bibbase_header a[onclick="groupby('downloads')"] { display: none; }
+
