@@ -14,9 +14,58 @@
 <!-- for FF, Chrome, Opera -->
 <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32">
 
-</head>
-<body>
+<style>
+.sidenav {
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 75px;
+  left: 5px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
 
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 150px; /* Same width as the sidebar + left position in px */
+  font-size: 15px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 80px; /* fixed header height*/
+  margin: -80px 0 0; /* negative fixed header height */
+}
+
+</style>
+
+</head>
+
+
+<body>
 <!-- HEADER =============================-->
 <header class="item header margin-top-0">
 <div class="wrapper">
@@ -69,12 +118,28 @@
 </div>
 </header>
 
+<div class="sidenav">
+	<div id="navbar-collapse-02" class="collapse navbar-collapse">
+		<ul style="font-family:verdana">
+			<li><a href="#Research1">Rotary shear under X-ray micro-CT</a></li>
+			<li><a href="#Research2">4D fault evolution</a></li>
+			<li><a href="#Research3">Machine learning AE analysis</a></li>
+			<li><a href="#Research4">Fracture surface roughness</a></li>
+			<li><a href="#Research5">Numerical simulation of AE</a></li>
+			<li><a href="#Research6">Numerical simulation of HF</a></li>
+			<li><a href="#Research7">Visualization under micro-CT</a></li>
+			<li><a href="#Research8">Simulation of joint under impact</a></li>
+			<li><a href="#Research9">Ultrasonic tomography with FDEM</a></li>
+		</ul>
+	</div>
+</div>
+
 <!-- CONTENT =============================-->
 
 	<div class="container" style="background:#d5f4e6;">
 		<div class="row">
 			<div class="col-md-12 text-center">
-			<h2 id="Research1">Rock deformation experiments under X-ray µCT</h2>
+			<h2 id="Research1">Rotary shear experiments under X-ray µCT</h2>
 			<img src="images/ERDu_in_CT.png" alt="" width="900"/>
 			<img src="images/fig1.png" alt="" width="450"/>
 			<p>Conducting rock physics experiments while inspecting the sample volume using X-ray micro-computed tomography (µCT). <a href="https://aip.scitation.org/doi/10.1063/1.4974149"> Read more</a> </p>
@@ -88,7 +153,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 			
-			<h2 id="Research2">4D observation of rock deformation under micro-CT</h2>
+			<h2 id="Research2">4D observation of fault evolution under micro-CT</h2>
 			<img src="images/1.gif" alt="" width="300"/>
 			<img src="images/frac_animate.gif" alt="" width="300"/>
 			</br>
