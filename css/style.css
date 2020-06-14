@@ -70,7 +70,7 @@ header .navbar-white {
 	font-family:Dosis;
 	text-transform:uppercase;
 }
-	.text-homeimage {
+.text-homeimage {
 	text-align:center;
 	color:#fff;
 	z-index:2;
@@ -84,7 +84,7 @@ header .navbar-white {
 	font-family:Dosis;
 }
 .text-pageheader {
-	 text-align:center;
+	text-align:center;
 	color:#fff;
 	z-index:2;
 	position:relative;
