@@ -26,6 +26,71 @@
 <!-- for FF, Chrome, Opera -->
 <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32">
 
+
+
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 100%;
+  height: 320px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 90%px;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 90%;
+  height: 320px
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 320px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: none;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+</style>
+
+
 </head>
 <body>
 
@@ -91,174 +156,132 @@
 </br>
 </br>
 
-	<div class="container">
 
-    <!-- Qi Zhao =============================-->
-		<div class="row" style="background:#d5f4e6;">
-			<div class="col-md-4" style="text-align:center;" >
-			  </br>
-				<a href="QZ.html"><img src="images/QZ_pic_2.jpg" alt="" height="200">
-				</br>
-				<a href="QZ.html"><i class="fa fa-link"></i> About me</a>
-			</div>
-			<div class="col-md-6">
-				<h3>Dr. Qi Zhao</h3>
-				<b>Assistant Professor</b></br>
-				Department of Civil and Environmental Engineering</br>
-				The Hong Kong Polytechnic University</br>
-				Hung Hom, Kowloon, Hong Kong, China</br>
-				</br>
 
-			</div>
+<div class="container">
+<h2>Current members</h2>
+<!-- ============================= 1st row =============================-->
+<div class="row">
+
+
+	<div class="col-sm-3" align="center">
+		<a href="QZ.html">
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+		<div class="card">
+		<img src="images/QZ_pic_2.jpg" alt="" height="250">
+			<h4><b>Dr. Qi Zhao</b></h4>
+			<p>Assistant Professor</p>
 		</div>
-
-
-    <!-- Guo Tianyang =============================    -->
-    <div class="row">
-			<div class="col-md-4" style="text-align:center;" >
-			  </br>
-				<img src="images/Guo_tianyang.jpg" alt="" height="200">
-        </br>
-        </br>
 			</div>
-			<div class="col-md-6">
-				<h3>Dr. Tianyang Guo</h3>
-				<b>Postdoc</b></br>
-				PhD, The University of Hong Kong, 2020 </br>
-        <a href="https://www.researchgate.net/profile/Guo_Tianyang"><i class="fa fa-link"></i> ResearchGate</a>
-				</br>
-
+			<div class="flip-card-back">
+			  <h4>Dr. Qi Zhao</h4> 
+			  <p>PhD, University of Toronto, 2017</p> 
+			  <p> <i class="fa fa-link"></i> CV </p>
 			</div>
+		  </div>
 		</div>
-
-
-    <!-- Guo Tianyang =============================    -->
-    <div class="row" style="background:#d5f4e6;">
-			<div class="col-md-4" style="text-align:center;" >
-			  </br>
-				<img src="images/Li_Xiaofeng.jpg" alt="" height="200">
-        </br>
-        </br>
-			</div>
-			<div class="col-md-6">
-				<h3>Dr. Xiaofeng Li</h3>
-				<b>Postdoc</b></br>
-				PhD, Institute of Rock and Soil Mechanics, Chinese Academy of Sciences, 2020 </br>
-				</br>
-
-			</div>
-		</div>
-
-    <!-- Cai Guanglei =============================-->
-    <div class="row">
-			<div class="col-md-4" style="text-align:center;" >
-			  </br>
-				<img src="images/Cai_Guanglei.jpg" alt="" height="200">
-        </br>
-        </br>
-			</div>
-			<div class="col-md-6">
-				<h3>Guanglei Cai</h3>
-				<b>Research Assistant (PhD student 09/2021)</b></br>
-				MSc., Wuhan University, 2020</br>
-				</br>
-
-			</div>
-		</div>
-
-
-    <!-- Luo Jie =============================-->
-    <div class="row" style="background:#d5f4e6;">
-			<div class="col-md-4" style="text-align:center;" >
-			  </br>
-				<img src="images/Luo_Jie.jpg" alt="" height="200">
-        </br>
-        </br>
-			</div>
-			<div class="col-md-6">
-				<h3>Jie Luo</h3>
-				<b>MSc student, Expected graduation: 07/2021</b></br>
-				Bachelor, Sichuan Agricultural University, 2020</br>
-				</br>
-
-			</div>
-		</div>
-
-    <!-- Wu Huanyu =============================
-    <div class="row">
-			<div class="col-md-4" style="text-align:center;" >
-			  </br>
-				<img src="images/QZ_pic_2.jpg" alt="" height="300">
-        </br>
-        </br>
-			</div>
-			<div class="col-md-6">
-				<h3>Huanyu Wu</h3>
-				<b>PhD student (09/2021)</b></br>
-				BSc, Zhejiang University, 2020</br>
-				</br>
-
-			</div>
-		</div>
--->
-
-
-
-		<div class="row">
-			<div class="col-md-4" style="text-align:center;" >
-			</br>
-
-			</div>
-			<div class="col-md-5">
-
-
-        <!--
-        <a href="https://www.polyu.edu.hk/ro/doc/PolyU_PhD_Scholarship_2020-21.pdf" target="_blank" class="homebrowseitems" style="font-size:16px"><i class="fa fa-cog fa-spin fa-lg fa-fw"></i> Apply now to start in Fall 2020!</a>
-        -->
-        </br>
-
-
-			</div>
-		</div>
-
-		<!--
-		<div class="row">
-			<div class="col-md-4" style="text-align:center;" >
-			</br>
-				<img src="images/unnamed.png" alt="" height="200">
-			</div>
-			<div class="col-md-5">
-				<h3>Member</h3>
-				</br>
-				Department of Civil and Environmental Engineering</br>
-				The Hong Kong Polytechnic University</br>
-				Hung Hom, Kowloon, Hong Kong, China</br>
-				</br>
-				Tel:</br>
-				Email:
-			</div>
-		</div>
-
-
-		<div class="row" style="background:#d5f4e6;">
-			<div class="col-md-4" style="text-align:center;" >
-			</br>
-				<img src="images/unnamed.png" alt="" height="200">
-			</div>
-			<div class="col-md-5">
-				<h3>Member</h3>
-				</br>
-				Department of Civil and Environmental Engineering</br>
-				The Hong Kong Polytechnic University</br>
-				Hung Hom, Kowloon, Hong Kong, China</br>
-				</br>
-				Tel:</br>
-				Email:
-			</div>
-		</div>
-		-->
-
+		</a>
 	</div>
+
+	
+	<div class="col-sm-3" align="center">
+		<a href="https://www.researchgate.net/profile/Guo_Tianyang">
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+		<div class="card">
+		<img src="images/Guo_tianyang.jpg" alt="" height="250">
+			<h4><b>Dr. Tianyang Guo</b></h4>
+			<p>Postdoc</p>
+		</div>
+			</div>
+			<div class="flip-card-back">
+			  <h4>Dr. Tianyang Guo</h4> 
+			  <p>PhD, The University of Hong Kong, 2020</p> 
+			  <p> <i class="fa fa-link"></i> ResearchGate </p>
+			</div>
+		  </div>
+		</div>
+		</a>
+	</div>
+	
+
+	
+	<div class="col-sm-3" align="center">
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+		<div class="card">
+		<img src="images/Li_Xiaofeng.jpg" alt="" height="250">
+			<h4><b>Dr. Xiaofeng Li</b></h4>
+			<p>Postdoc</p>
+		</div>
+			</div>
+			<div class="flip-card-back">
+			  <h4>Dr. Xiaofeng Li</h4> 
+			  <p>PhD, Institute of Rock and Soil Mechanics, Chinese Academy of Sciences, 2020</p> 
+			  <p> </p>
+			</div>
+		  </div>
+		</div>
+	</div>	
+	
+	
+	<div class="col-sm-3" align="center">
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+		<div class="card">
+		<img src="images/Cai_Guanglei.jpg" alt="" height="250">
+			<h4><b>Guanglei Cai</b></h4>
+			<p>Research Assistant</p>
+		</div>
+			</div>
+			<div class="flip-card-back">
+			  <h4>Guanglei Cai</h4> 
+			  <p>MSc., Wuhan University, 2019</p> 
+			  <p> </p>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+</div>
+
+<hr>	
+
+<!-- ============================= 2nd row =============================-->
+<div class="row">
+	
+	<div class="col-sm-3" align="center">
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+				<div class="card">
+				  <img src="images/Luo_Jie.jpg" alt="" height="250">
+					<h4><b>Jie Luo</b></h4>
+					<p>MSc student</p>
+				</div>
+			</div>
+			<div class="flip-card-back">
+			  <h4>Jie Luo</h4>  
+			  <p>Bachelor, Sichuan Agricultural University, 2020</p>
+			  <p> </p>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+</div>
+  
+<hr>
+
+		
+
+</div>
 
 
 <!-- FOOTER =============================-->
