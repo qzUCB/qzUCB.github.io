@@ -1,0 +1,17 @@
+.paper_container {
+    
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;
+    width:85%;
+
+}
+
+.image {
+    width: 200px; /* 图片宽度 */
+    margin-right: 35px; /* 图片和文字之间的间隔 */
+}
+
+.text {
+    flex: 1; /* 自动扩展填充剩余空间 */
+}
